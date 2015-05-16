@@ -14,4 +14,4 @@ def cutyCapt(page, Rid):
         data = f.read()
     os.remove(Rid+".png")
     htmlstring = data.encode("base64").replace('\n','')
-    return('<img src="data:image;base64,'+htmlstring+'">')
+    return(htmlstring)
