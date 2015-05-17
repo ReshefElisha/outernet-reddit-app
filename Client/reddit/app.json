@@ -1,0 +1,10 @@
+{
+  "id": "reddit",
+  "title": "Offline Reddit Feed",
+  "version": "0.1",
+  "author": "RevolutionUC Inc",
+  "description": {
+    "en": "See the Reddit frontpage, updated twice daily."
+  },
+  "icon_behavior": false
+}

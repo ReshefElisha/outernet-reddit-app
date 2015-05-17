@@ -1,0 +1,10 @@
+{
+  "id": "oNews",
+  "title": "Outernet News Feed",
+  "version": "0.1",
+  "author": "TWPW Inc",
+  "description": {
+    "en": "See news relating to the Outernet Project."
+  },
+  "icon_behavior": false
+}

@@ -34,9 +34,9 @@ def cutyCapt(page, Rid):
 
 def App():
     reddit = praw.Reddit('OuternetRedditApp')
-    reddit.login('outernet-project','outernet')
-    front_page = reddit.get_front_page()
-    for submission in front_page:
+    reddit.login('OuternetNewsBot','outernet')
+    subreddit = reddit.get_subreddit("OuternetNews").get_new()
+    for submission in subreddit:
         err = 0
         try:
             title = str(submission.title)
