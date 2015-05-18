@@ -25,6 +25,7 @@ def cutyCapt(page, Rid):
     website = "--url="+page
     picture = "--out="+Rid+".png"
     subprocess.call(["cutycapt.exe", website, picture])
+<<<<<<< HEAD
     try:
         with open(Rid+".png", "rb") as f:
             data = f.read()
@@ -70,3 +71,10 @@ for submission in front_page:
         print 'Failed to print File'
         
         
+=======
+    with open(Rid+".png", "rb") as f:
+        data = f.read()
+    os.remove(Rid+".png")
+    htmlstring = data.encode("base64").replace('\n','')
+    return(htmlstring)
+>>>>>>> origin/master
